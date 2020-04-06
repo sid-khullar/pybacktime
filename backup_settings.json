@@ -1,0 +1,35 @@
+{
+    "settings": {
+        "backup_folder": "backup/"
+    },
+    "backup_sets": {
+        "Computer": {
+            "active": true,
+            "files": {
+                "description": "Files on my computer that aren't on Dropbox.",
+                "paths": [
+                    "~/Documents/",
+                    "~/Downloads/"
+                ]
+            },
+            "database": "None"
+        },
+        "MediaWiki": {
+            "active": false,
+            "files": {
+                "description": "Mediawiki files.",
+                "paths": [
+                    "/var/www/html/wiki/images/",
+                    "/var/www/html/wiki/LocalSettings.php"
+                ]
+            },
+            "database": {
+                "address": "localhost",
+                "username": "wiki",
+                "password": "12356",
+                "dbname": "wiki"
+            }
+        }
+
+    }
+}
