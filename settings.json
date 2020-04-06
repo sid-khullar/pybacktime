@@ -1,35 +1,33 @@
 {
-    "settings": {
-        "backup_folder": "backup/"
-    },
     "backup_sets": {
-        "Computer": {
+        "computer": {
             "active": true,
-            "files": {
-                "description": "Files on my computer that aren't on Dropbox.",
-                "paths": [
-                    "~/Documents/",
-                    "~/Downloads/"
+            "description": "Files on my computer that aren't on Dropbox.",
+            "settings": {
+                "backup_destination": "backups/computer/",
+                "database": null,
+                "filepaths": [
+                    "/home/sid/Documents/",
+                    "/home/sid/Downloads/"
                 ]
-            },
-            "database": "None"
+            }
         },
-        "MediaWiki": {
+        "mediawiki": {
             "active": false,
-            "files": {
-                "description": "Mediawiki files.",
-                "paths": [
+            "description": "Mediawiki files.",
+            "settings": {
+                "backup_destination": "backup/mediawiki/",
+                "filepaths": [
                     "/var/www/html/wiki/images/",
                     "/var/www/html/wiki/LocalSettings.php"
-                ]
-            },
-            "database": {
-                "address": "localhost",
-                "username": "wiki",
-                "password": "12356",
-                "dbname": "wiki"
+                ],
+                "database": {
+                    "address": "localhost",
+                    "username": "wiki",
+                    "password": "12356",
+                    "dbname": "wiki"
+                }
             }
         }
-
     }
 }
